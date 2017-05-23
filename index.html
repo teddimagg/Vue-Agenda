@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue"></script>
+
+	<!-- Vue Components -->
+	<script src="components/todoitem.js"></script>
+</head>
+<body>
+<div id="app-7">
+  <ul>
+    <todo-item
+      v-for="item in groceryList"
+      v-bind:item="item"
+      v-bind:key="item.id">
+    </todo-item>
+  </ul>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>
